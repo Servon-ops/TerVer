@@ -53,7 +53,7 @@ resultButton.addEventListener('click', event => {
 
 
 const result = () => {
-    if (mainState.n === '' && mainState.k === '') {
+    if (mainState.n === '' && mainState.k === '' && mainState.type === 'p-button' && document.querySelector('.input-repeat').checked === false) {
         alert('Пустые данные')
     }
     document.querySelectorAll('.formula').forEach(form => form.style.display = 'none')
