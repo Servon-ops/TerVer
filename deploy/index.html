@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рассчитать вероятность</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="main-window">
+        <h2>Рассчитать вероятность</h2>
+        <h3>Укажите тип вероятности</h3>
+        <div class="ver-types-buttons">
+            <button class="s-button">
+                Сочетание
+            </button>
+            <button class="r-button">
+                Размещение
+            </button>
+            <button class="p-button">
+                Перестановка
+            </button>
+        </div>
+        <div class="input-repeat-container">
+            <input type="checkbox" class="input-repeat">
+            <label class="input-repeat-text">Повторения</label>
+        </div>
+        <div class="formula fpb">
+            <h1>P<sub>n</sub> = n!</h1>
+        </div>
+        <div class="formula fps">
+            <h1>P<sub>n</sub> = n!/(k&#8321;k&#8322;...k&#8344;)</h1>
+        </div>
+        <div class="formula frb">
+            <h1>A<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n!/(n-k)!</h1>
+        </div>
+        <div class="formula frs">
+            <h1>A<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n<sup>k</sup></h1>
+        </div>
+        <div class="formula fsb">
+            <h1>C<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n!/(k!(n-k)!)</h1>
+        </div>
+        <div class="formula fss">
+            <h1>C<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = C<sup>k</sup> <sub style="margin-left:-0.9em">n + k - 1</sub></h1>
+        </div>
+        <div class="data-input">
+            <input type="number" class="input-n" placeholder="Кол-во элементов (n)">
+            <input type="number" class="input-k" placeholder="Выборка (k)">
+        </div>
+        <div style="text-align: center">
+            <button class="result-button">
+                Рассчитать
+            </button>
+        </div>
+        <div class="result-output-container">
+            <h3>Результат:</h3>
+            <h2 class="result-output"></h2>
+        </div>
+    </div>
+</body>
+<script type="module" src="js/main.js"></script>
+</html>
