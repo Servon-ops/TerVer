@@ -53,9 +53,6 @@ resultButton.addEventListener('click', event => {
 
 
 const result = () => {
-    if (Number(mainState.n) < 1) {
-        alert('Неверные данные')
-    }
     if (mainState.n === '' && mainState.k === '') {
         alert('Пустые данные')
     }
@@ -63,6 +60,9 @@ const result = () => {
     mainState.n = Number(mainState.n)
     if (!(mainState.repeat === true && mainState.type === 'p-button')) {
         mainState.k = Number(mainState.k)
+    }
+    if (Number(mainState.n) < 1 || Number(mainState.k < 0)) {
+        alert('Неверные данные')
     }
     if (mainState.type === 'p-button') {
         if (mainState.repeat === false) {
