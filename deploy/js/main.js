@@ -53,7 +53,7 @@ resultButton.addEventListener('click', event => {
 
 
 const result = () => {
-    if (mainState.n > 0) {
+    if (Number(mainState.n) < 1) {
         alert('Неверные данные')
     }
     if (mainState.n === '' && mainState.k === '') {
