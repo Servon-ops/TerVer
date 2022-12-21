@@ -8,7 +8,7 @@
 <body>
     <div class="main-window">
         <h2>Рассчитать вероятность</h2>
-        <h3>Укажите тип вероятности</h3>
+        <h3>Укажите закон</h3>
         <div class="ver-types-buttons">
             <button class="s-button">
                 Сочетание
@@ -21,27 +21,29 @@
             </button>
         </div>
         <div class="input-repeat-container">
-            <input type="checkbox" class="input-repeat">
+            <div class="check-box-div">
+                <input type="checkbox" class="input-repeat">
+            </div>
             <label class="input-repeat-text">Повторения</label>
         </div>
-        <div class="formula fpb">
-            <h1>P<sub>n</sub> = n!</h1>
-        </div>
-        <div class="formula fps">
-            <h1>P<sub>n</sub> = n!/(k&#8321;k&#8322;...k&#8344;)</h1>
-        </div>
-        <div class="formula frb">
-            <h1>A<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n!/(n-k)!</h1>
-        </div>
-        <div class="formula frs">
-            <h1>A<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n<sup>k</sup></h1>
-        </div>
-        <div class="formula fsb">
-            <h1>C<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n!/(k!(n-k)!)</h1>
-        </div>
-        <div class="formula fss">
-            <h1>C<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = C<sup>k</sup> <sub style="margin-left:-0.9em">n + k - 1</sub></h1>
-        </div>
+            <div class="formula fpb">
+                <h1>P<sub>n</sub> = n!</h1>
+            </div>
+            <div class="formula fps">
+                <h1>P<sub>n</sub> = n!/(k&#8321;k&#8322;...k&#8344;)</h1>
+            </div>
+            <div class="formula frb">
+                <h1>A<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n!/(n-k)!</h1>
+            </div>
+            <div class="formula frs">
+                <h1>A<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n<sup>k</sup></h1>
+            </div>
+            <div class="formula fsb">
+                <h1>C<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = n!/(k!(n-k)!)</h1>
+            </div>
+            <div class="formula fss">
+                <h1>C<sup>k</sup> <sub style="margin-left:-0.9em">n</sub> = C<sup>k</sup> <sub style="margin-left:-0.9em">n + k - 1</sub></h1>
+            </div>
         <div class="data-input">
             <input type="number" class="input-n" placeholder="Кол-во элементов (n)">
             <input type="number" class="input-k" placeholder="Выборка (k)">

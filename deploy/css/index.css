@@ -3,6 +3,7 @@
     margin-left: auto;
     width: 100vh;
     background-color: white;
+    opacity: 99%;
     height: 80vh;
     border-radius: 50px;
     margin-top: 3%;
@@ -11,7 +12,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-image: url("../images/background.jpg");
     margin: 0;
 }
 
@@ -37,6 +38,7 @@ button {
 
 .input-repeat {
     scale: 1.3;
+    cursor: pointer;
 }
 
 .input-repeat-text {
@@ -57,7 +59,7 @@ h2, h3 {
 }
 
 .formula {
-    height: 100px;
+    height: 60px;
     text-align: center;
     display: none;
 }
